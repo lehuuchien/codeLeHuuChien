@@ -21,6 +21,18 @@
 		216798A0276AECD700C41BAA /* SelectImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2167989E276AECD700C41BAA /* SelectImage.swift */; };
 		216798A2276AFF1B00C41BAA /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216798A1276AFF1B00C41BAA /* CheckBox.swift */; };
 		216798A3276AFF1B00C41BAA /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216798A1276AFF1B00C41BAA /* CheckBox.swift */; };
+		2169008D27701CB500A42588 /* Ideas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2169008C27701CB500A42588 /* Ideas.swift */; };
+		2169008E27701CB500A42588 /* Ideas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2169008C27701CB500A42588 /* Ideas.swift */; };
+		2169009327701CF900A42588 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2169009227701CF900A42588 /* ViewModel.swift */; };
+		2169009427701CF900A42588 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2169009227701CF900A42588 /* ViewModel.swift */; };
+		2169009627701F8C00A42588 /* MenuBarIdeas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2169009527701F8C00A42588 /* MenuBarIdeas.swift */; };
+		2169009727701F8C00A42588 /* MenuBarIdeas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2169009527701F8C00A42588 /* MenuBarIdeas.swift */; };
+		216900992770218000A42588 /* CommunityIdeas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216900982770218000A42588 /* CommunityIdeas.swift */; };
+		2169009A2770218000A42588 /* CommunityIdeas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216900982770218000A42588 /* CommunityIdeas.swift */; };
+		2169009D27702FB300A42588 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2169009C27702FB300A42588 /* View+Extension.swift */; };
+		2169009E27702FB300A42588 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2169009C27702FB300A42588 /* View+Extension.swift */; };
+		216900A027703DC300A42588 /* CardStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2169009F27703DC300A42588 /* CardStock.swift */; };
+		216900A127703DC300A42588 /* CardStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2169009F27703DC300A42588 /* CardStock.swift */; };
 		216AFA45276C79F9008FF46D /* IdeasCommunity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216AFA44276C79F9008FF46D /* IdeasCommunity.swift */; };
 		216AFA46276C79F9008FF46D /* IdeasCommunity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216AFA44276C79F9008FF46D /* IdeasCommunity.swift */; };
 		216AFA48276C7DD8008FF46D /* CardViewIdeas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216AFA47276C7DD8008FF46D /* CardViewIdeas.swift */; };
@@ -51,6 +63,12 @@
 		2167989B276ADAED00C41BAA /* CheckboxContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxContent.swift; sourceTree = "<group>"; };
 		2167989E276AECD700C41BAA /* SelectImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectImage.swift; sourceTree = "<group>"; };
 		216798A1276AFF1B00C41BAA /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		2169008C27701CB500A42588 /* Ideas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ideas.swift; sourceTree = "<group>"; };
+		2169009227701CF900A42588 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		2169009527701F8C00A42588 /* MenuBarIdeas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarIdeas.swift; sourceTree = "<group>"; };
+		216900982770218000A42588 /* CommunityIdeas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityIdeas.swift; sourceTree = "<group>"; };
+		2169009C27702FB300A42588 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		2169009F27703DC300A42588 /* CardStock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStock.swift; sourceTree = "<group>"; };
 		216AFA44276C79F9008FF46D /* IdeasCommunity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeasCommunity.swift; sourceTree = "<group>"; };
 		216AFA47276C7DD8008FF46D /* CardViewIdeas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewIdeas.swift; sourceTree = "<group>"; };
 		216AFA4A276C9AC6008FF46D /* CardIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardIndex.swift; sourceTree = "<group>"; };
@@ -84,9 +102,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2169009B27702F9E00A42588 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				21EAEA8F27686BE9004FC1D7 /* Extension.swift */,
+				2169009C27702FB300A42588 /* View+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		21EAEA6B2768491B004FC1D7 = {
 			isa = PBXGroup;
 			children = (
+				2169009B27702F9E00A42588 /* Extension */,
 				21EAEA702768491B004FC1D7 /* Shared */,
 				21EAEA7F27684921004FC1D7 /* macOS */,
 				21EAEA7927684921004FC1D7 /* Products */,
@@ -99,7 +127,6 @@
 				21EAEA712768491B004FC1D7 /* Phase1App.swift */,
 				21EAEA722768491B004FC1D7 /* ContentView.swift */,
 				21EAEA7327684921004FC1D7 /* Assets.xcassets */,
-				21EAEA8F27686BE9004FC1D7 /* Extension.swift */,
 				21304D8927687232008F3F9F /* MenuBar.swift */,
 				21304D8C27687A5B008F3F9F /* Frame1605.swift */,
 				21304D8F27688304008F3F9F /* Tertiary.swift */,
@@ -113,6 +140,11 @@
 				216AFA44276C79F9008FF46D /* IdeasCommunity.swift */,
 				216AFA47276C7DD8008FF46D /* CardViewIdeas.swift */,
 				216AFA4A276C9AC6008FF46D /* CardIndex.swift */,
+				2169008C27701CB500A42588 /* Ideas.swift */,
+				2169009227701CF900A42588 /* ViewModel.swift */,
+				2169009527701F8C00A42588 /* MenuBarIdeas.swift */,
+				216900982770218000A42588 /* CommunityIdeas.swift */,
+				2169009F27703DC300A42588 /* CardStock.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -234,19 +266,25 @@
 			files = (
 				216AFA45276C79F9008FF46D /* IdeasCommunity.swift in Sources */,
 				21EAEA9027686BE9004FC1D7 /* Extension.swift in Sources */,
+				216900992770218000A42588 /* CommunityIdeas.swift in Sources */,
 				217A36182769C43600B1A5AF /* CommunityProfile.swift in Sources */,
 				21EAEA8327684921004FC1D7 /* ContentView.swift in Sources */,
 				21304D8D27687A5B008F3F9F /* Frame1605.swift in Sources */,
+				216900A027703DC300A42588 /* CardStock.swift in Sources */,
 				21304D9027688304008F3F9F /* Tertiary.swift in Sources */,
 				21304D8A27687232008F3F9F /* MenuBar.swift in Sources */,
 				21304D9327689777008F3F9F /* Community.swift in Sources */,
 				2167989F276AECD700C41BAA /* SelectImage.swift in Sources */,
 				217A36152769A98A00B1A5AF /* ContentView2.swift in Sources */,
+				2169009327701CF900A42588 /* ViewModel.swift in Sources */,
 				216AFA48276C7DD8008FF46D /* CardViewIdeas.swift in Sources */,
+				2169009627701F8C00A42588 /* MenuBarIdeas.swift in Sources */,
 				2167989C276ADAED00C41BAA /* CheckboxContent.swift in Sources */,
 				216AFA4B276C9AC6008FF46D /* CardIndex.swift in Sources */,
 				21EAEA8127684921004FC1D7 /* Phase1App.swift in Sources */,
+				2169008D27701CB500A42588 /* Ideas.swift in Sources */,
 				216798A2276AFF1B00C41BAA /* CheckBox.swift in Sources */,
+				2169009D27702FB300A42588 /* View+Extension.swift in Sources */,
 				217A3612276983D800B1A5AF /* ActicleContent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,19 +295,25 @@
 			files = (
 				216AFA46276C79F9008FF46D /* IdeasCommunity.swift in Sources */,
 				21EAEA9127686BE9004FC1D7 /* Extension.swift in Sources */,
+				2169009A2770218000A42588 /* CommunityIdeas.swift in Sources */,
 				217A36192769C43600B1A5AF /* CommunityProfile.swift in Sources */,
 				21EAEA8427684921004FC1D7 /* ContentView.swift in Sources */,
 				21304D8E27687A5B008F3F9F /* Frame1605.swift in Sources */,
+				216900A127703DC300A42588 /* CardStock.swift in Sources */,
 				21304D9127688304008F3F9F /* Tertiary.swift in Sources */,
 				21304D8B27687232008F3F9F /* MenuBar.swift in Sources */,
 				21304D9427689777008F3F9F /* Community.swift in Sources */,
 				216798A0276AECD700C41BAA /* SelectImage.swift in Sources */,
 				217A36162769A98A00B1A5AF /* ContentView2.swift in Sources */,
+				2169009427701CF900A42588 /* ViewModel.swift in Sources */,
 				216AFA49276C7DD8008FF46D /* CardViewIdeas.swift in Sources */,
+				2169009727701F8C00A42588 /* MenuBarIdeas.swift in Sources */,
 				2167989D276ADAED00C41BAA /* CheckboxContent.swift in Sources */,
 				216AFA4C276C9AC6008FF46D /* CardIndex.swift in Sources */,
 				21EAEA8227684921004FC1D7 /* Phase1App.swift in Sources */,
+				2169008E27701CB500A42588 /* Ideas.swift in Sources */,
 				216798A3276AFF1B00C41BAA /* CheckBox.swift in Sources */,
+				2169009E27702FB300A42588 /* View+Extension.swift in Sources */,
 				217A3613276983D800B1A5AF /* ActicleContent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
