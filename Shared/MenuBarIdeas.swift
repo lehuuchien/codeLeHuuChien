@@ -24,7 +24,6 @@ struct MenuBarIdeas: View {
                             didSelectedItem?(index)
                         } label: {
                                 Text(titles[index])
-                                
                                 .foregroundColor(currentIndex == index ? .blue : .gray)
                                 Spacer()
                         }
@@ -37,7 +36,8 @@ struct MenuBarIdeas: View {
                 Image("chat")
                     .foregroundColor(.white)
 
-            }.frame(width: .infinity, height: 40, alignment: .top)
+            }
+            .frame(alignment: .top)
             .padding(EdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 8))
                 .background(Color(hex: "0F1527"))
     }

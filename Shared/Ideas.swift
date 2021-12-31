@@ -8,7 +8,7 @@
 import SwiftUI
 struct BaseScreen: View {
     
-    @State private var currentIndex: Int = 1
+    @State private var currentIndex: Int = 0
     var body: some View {
         VStack {
             MenuBarIdeas(titles: ["Follow", "Ideas", "Education"], didSelectedItem: { index in
@@ -17,10 +17,11 @@ struct BaseScreen: View {
             Spacer()
             switch currentIndex {
             case 0:
-                Text("Follow Screen")
+                ContentView()
+                    .padding(.top, -12)
             case 1:
                 Ideas()
-                    .padding(.top, -12)
+                    .padding(.top, -8)
             case 2:
                 Text("Aollaa Screen")
             default:
@@ -39,10 +40,11 @@ struct Ideas: View {
                     .font(.system(size: 18))
                     .foregroundColor(.white)
                     .padding(.leading, 8)
+                    .padding(.top, 16)
                 HStack{
                     CommunityIdeas(listCommunityIdeas: viewModel.listCommunityIdeas)
                         .padding(.top, -8)
-                }.frame(maxWidth: .infinity, maxHeight: 190, alignment: .center)
+                    }.frame(maxWidth: .infinity, maxHeight: 190, alignment: .center)
                     
                 Rectangle()
                     .frame(width: .infinity, height: 2, alignment: .center)
@@ -82,6 +84,9 @@ struct Ideas: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
         .background(Color(hex: "0F1527"))
+        .onAppear() {
+            viewModel.getdataCommunity()
+        }
     }
 }
 

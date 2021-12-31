@@ -13,23 +13,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             VStack(alignment: .leading ) {
-                HStack{
-                    Image("new")
-                        .resizable()
-                        .clipShape(Circle())
-                        .overlay(Circle().stroke(Color.black, lineWidth: 0))
-                        .frame(width: 40, height: 40, alignment: .center)
-                        
-                    ViewTopTitle()
-                    Button(action:{}){
-                        Image("Search")
-                            .padding()
-                    }
-                    Button(action:{}){
-                        Image("chat")
-                    }
-                }.frame(maxWidth: .infinity, maxHeight: 50, alignment: .center)
-                
+
                 //---
                 ScrollView(showsIndicators: false){
                     //

@@ -9,14 +9,19 @@ import SwiftUI
 
 struct CommunityIdeas: View {
     var listCommunityIdeas: [ModelCommunityIdeas]
+    
     var body: some View {
-        HStack{
-            TabView{
-                ForEach(listCommunityIdeas.indices, id: \.self) { index in
-                    let item = listCommunityIdeas[index]
-                    ItemCommunityIdeas(image: item.image, title: item.title, article: item.article, subArticle: item.subArticle)
-                }
-            }.tabViewStyle(PageTabViewStyle())
+        if listCommunityIdeas.isEmpty {
+            EmptyView()
+        } else {
+            HStack{
+                TabView{
+                    ForEach(listCommunityIdeas.indices, id: \.self) { index in
+                        let item = listCommunityIdeas[index]
+                        ItemCommunityIdeas(image: item.image, title: item.title, article: item.article, subArticle: item.subArticle)
+                    }
+                }.tabViewStyle(PageTabViewStyle())
+            }
         }
     }
 }
