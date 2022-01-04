@@ -9,15 +9,16 @@ import SwiftUI
 
 struct BuyView: View {
     @State var current: Int = 0
-    var model: ProductModel?
+    @StateObject var viewModel = HomeViewModel()
+    var model: ProductModel
     var body: some View {
         VStack(alignment: .leading){
-            Image(model?.image ?? "")
+            Image(model.image ?? "")
                 .resizable()
                 .scaledToFit()
                 .frame(maxWidth: .infinity, maxHeight: 200)
                 .padding(.horizontal)
-            Text(model?.nameProduct ?? "")
+            Text(model.nameProduct ?? "")
                 .padding(.horizontal)
             HStack(spacing: 1){
                 Image(systemName: "star.fill")
@@ -28,7 +29,7 @@ struct BuyView: View {
                     .bold()
                 Text("(120)")
                 Spacer()
-                Text(model?.price ?? "")
+                Text(model.price ?? "")
                     .foregroundColor(.black)
                     .font(.system(size: 24))
                     .bold()
@@ -61,14 +62,15 @@ struct BuyView: View {
             Spacer()
             HStack{
                 Spacer()
-                NavigationLink {
-                    MyCartView()
+                Button {
+                    viewModel.addCart(item: model)
+                    print(viewModel.addlistcart)
                 } label: {
                     HStack{
                         Image(systemName: "cart.fill")
                             .font(.system(size: 24))
                             .foregroundColor(.white)
-                        Text(" Buy Now")
+                        Text("Add to cart")
                             .bold()
                             .foregroundColor(.white)
                             .font(.system(size: 24))
@@ -80,16 +82,19 @@ struct BuyView: View {
             }.padding(.bottom)
             
         }
+        .onAppear {
+            viewModel.getListCarts()
+        }
         .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 //---
-struct BuyView_Previews: PreviewProvider {
-    static var previews: some View {
-        BuyView()
-    }
-}
+//struct BuyView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        BuyView()
+//    }
+//}
 
 struct ColorView: View {
     var listColor: [String] = []

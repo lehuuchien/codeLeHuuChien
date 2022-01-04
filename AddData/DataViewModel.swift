@@ -16,8 +16,8 @@ class DataViewModel: ObservableObject {
         self.listData = data
     }
     
-    func addData(aName: String, aBirth: String, aPosition: String) {
-        listData.append(DataModel(name: aName, birth: aBirth, position: aPosition))
-    }
+//    func addData(aName: String, aBirth: String, aPosition: String) {
+//        listData.append(DataModel(name: aName, birth: aBirth, position: aPosition))
+//    }
     
 }

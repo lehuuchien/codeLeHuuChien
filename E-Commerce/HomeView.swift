@@ -130,26 +130,27 @@ struct HomeView: View {
 }
 
 struct ProductItem: View {
-    var model: ProductModel?
+    @StateObject var viewModel = HomeViewModel()
+    var model: ProductModel
     var body: some View {
         NavigationLink {
             BuyView(model: model)
         } label: {
             VStack(alignment: .leading, spacing: 0){
-                Text(model?.sale ?? "")
+                Text(model.sale ?? "")
                     .frame(maxWidth: 75, maxHeight: 25)
                     .foregroundColor(.orange)
                     .overlay(
                     RoundedRectangle(cornerRadius: 14)
                         .stroke(Color.orange, lineWidth: 1))
                     .padding(.top, 3)
-                Image(model?.image ?? "")
+                Image(model.image ?? "")
                     .resizable()
                     .scaledToFill()
                     .frame(maxWidth: 0.3.w, maxHeight: 150)
-                Text(model?.nameProduct ?? "")
+                Text(model.nameProduct ?? "")
                     .foregroundColor(.black)
-                Text(model?.price ?? "")
+                Text(model.price ?? "")
                     .bold()
                     .foregroundColor(.black)
             }.padding(.horizontal)

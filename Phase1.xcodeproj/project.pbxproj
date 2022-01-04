@@ -22,6 +22,7 @@
 		21304D9427689777008F3F9F /* Community.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21304D9227689776008F3F9F /* Community.swift */; };
 		21473B01277C086A00E1A179 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21473B00277C086A00E1A179 /* Settings.swift */; };
 		21473B04277C6F7900E1A179 /* ChooseClassScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21473B03277C6F7900E1A179 /* ChooseClassScreen.swift */; };
+		215D12192784490300D09FB8 /* AppDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215D12182784490300D09FB8 /* AppDataManager.swift */; };
 		2167989C276ADAED00C41BAA /* CheckboxContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2167989B276ADAED00C41BAA /* CheckboxContent.swift */; };
 		2167989D276ADAED00C41BAA /* CheckboxContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2167989B276ADAED00C41BAA /* CheckboxContent.swift */; };
 		2167989F276AECD700C41BAA /* SelectImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2167989E276AECD700C41BAA /* SelectImage.swift */; };
@@ -93,6 +94,7 @@
 		21304D9227689776008F3F9F /* Community.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Community.swift; sourceTree = "<group>"; };
 		21473B00277C086A00E1A179 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		21473B03277C6F7900E1A179 /* ChooseClassScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseClassScreen.swift; sourceTree = "<group>"; };
+		215D12182784490300D09FB8 /* AppDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataManager.swift; sourceTree = "<group>"; };
 		2167989B276ADAED00C41BAA /* CheckboxContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxContent.swift; sourceTree = "<group>"; };
 		2167989E276AECD700C41BAA /* SelectImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectImage.swift; sourceTree = "<group>"; };
 		216798A1276AFF1B00C41BAA /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 				21F79B3D277DADAC00B988AA /* MyCartView.swift */,
 				21F79B3F277DB48E00B988AA /* HomeView.swift */,
 				218F0FF2277EB0EE00866DCF /* BuyView.swift */,
+				215D12182784490300D09FB8 /* AppDataManager.swift */,
 			);
 			path = "E-Commerce";
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 				2169009D27702FB300A42588 /* View+Extension.swift in Sources */,
 				2119E4BF277B08C900179D58 /* StepView.swift in Sources */,
 				217A3612276983D800B1A5AF /* ActicleContent.swift in Sources */,
+				215D12192784490300D09FB8 /* AppDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

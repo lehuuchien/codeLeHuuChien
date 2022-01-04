@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MyCartView: View {
-    @State var viewModel = HomeViewModel()
+    @StateObject var viewModel = HomeViewModel()
     var body: some View {
         VStack(alignment: .leading){
             HStack(spacing: 0){
@@ -16,21 +16,24 @@ struct MyCartView: View {
                     .bold()
                     .padding()
             }
-            //
-            ForEach(viewModel.listCart.indices, id: \.self) {index in
-                let item = viewModel.listCart[index]
-                CartItem(model: item)
+            ScrollView(showsIndicators: false){
+                ForEach(viewModel.addlistcart.indices, id: \.self) {index in
+                    let item = viewModel.addlistcart[index]
+                    CartItem(model: item)
+                }
             }
+            //
         Spacer()
         }
-        .onAppear{
-            viewModel.addCart()
-        }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+        .onAppear {
+            viewModel.getListCarts()
+        }
     }
 }
 
 struct CartItem: View {
+    @State var count = 1
     var model: ProductModel?
     var body: some View {
         VStack(alignment: .leading){
@@ -47,7 +50,21 @@ struct CartItem: View {
                             Text(model?.price ?? "")
                                 .bold()
                             Spacer()
-                            Text("1")
+                            Button {
+                                if count > 1 {
+                                    count -= 1
+                                }
+                            } label: {
+                                Image(systemName: "minus.circle")
+                                    .foregroundColor(.black)
+                            }
+                            Text("\(count)")
+                            Button {
+                                count += 1
+                            } label: {
+                                Image(systemName: "plus.circle")
+                                    .foregroundColor(.black)
+                            }
                         }
                     }
                 }.frame(maxWidth: .infinity, maxHeight: 60)
@@ -69,10 +86,6 @@ struct CartItem: View {
             }
         }
         .padding()
-        .overlay(
-        RoundedRectangle(cornerRadius: 30)
-            .stroke(.gray))
-            .padding()
     }
 }
 
